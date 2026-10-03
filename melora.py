@@ -1,22 +1,5 @@
 #!/usr/bin/env python3
-"""
-MELORA  -  a modern dark music player
-=====================================
-Python + tkinter + Pillow (anti-aliased graphics) + pygame (audio)
 
-Install :  pip install pygame mutagen pillow tkinterdnd2
-Run     :  python music_player.py
-
-Highlights
-  * Animated UI: smooth scrolling, hover fades, staggered list entrance,
-    colour themes that morph to the current album art, animated equalizer
-  * Drag & drop a folder -> instant playlist + autoplay (with a drop overlay)
-  * Real album art (ID3 / FLAC / MP4 / folder.jpg) or generated gradient covers
-  * Playlists, rename / delete, shuffle, repeat, seek, volume, mute
-  * Search: Ctrl+F (or click the search box) - live filter by title / artist
-  Keys: Space play/pause | <- -> seek 5s | Up/Down volume | M mute
-          Ctrl+<- / Ctrl+-> previous / next | Delete remove track
-"""
 import colorsys
 import hashlib
 import io
@@ -52,12 +35,12 @@ PILL = "#1a1a25"
 
 AUDIO_EXT = {".mp3", ".wav", ".ogg", ".flac", ".m4a", ".opus"}
 DATA_FILE = Path.home() / ".melora_player.json"
-OLD_DATA = Path.home() / ".sonara_player.json"   # migrated automatically
+OLD_DATA = Path.home() / ".sonara_player.json"  
 SB_W, BAR_H, HDR, RH = 252, 96, 280, 52
 ROW0 = HDR + 46
 
 
-# ───────────────────────── helpers ─────────────────────────
+
 def h2r(h):
     h = h.lstrip("#")
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
@@ -150,7 +133,6 @@ def rr(c, x1, y1, x2, y2, r, **kw):
     return c.create_polygon(p, smooth=True, **kw)
 
 
-# ───────────────────────── Pillow graphics ─────────────────────────
 _IC = {}
 
 
@@ -381,7 +363,7 @@ def read_meta(path):
     return (title, artist, dur)
 
 
-# ───────────────────────── tween engine ─────────────────────────
+
 class Tweener:
     def __init__(self, root):
         self.root, self.tw, self.running = root, {}, False
@@ -415,7 +397,7 @@ class Tweener:
             self.running = False
 
 
-# ───────────────────────── application ─────────────────────────
+
 class App:
     def __init__(self):
         if sys.platform.startswith("win"):
