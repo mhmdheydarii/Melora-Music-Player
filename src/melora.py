@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import colorsys
 import hashlib
 import io
