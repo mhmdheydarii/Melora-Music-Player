@@ -23,7 +23,7 @@ The project is also part of my experience with building, packaging, and distribu
 
 <p>
   <a href="https://github.com/mhmdheydarii/MELORA-MUSIC-PLAYER/releases/download/v1.0.0/Melora.exe">
-    Download Melora.exe
+    Download Melora
   </a>
 </p>
 
