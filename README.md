@@ -8,13 +8,10 @@
 </section>
 
 <h2>About</h2>
-<p>Melora is a lightweight desktop music player for Windows, built with Python.
-
-The goal of the project is to provide a clean and simple way to play and manage local music files while keeping the application lightweight and easy to use.
-
-Melora uses Python libraries such as Pygame, Mutagen, Pillow, and TkinterDnD2 for audio playback, metadata handling, image processing, and drag-and-drop functionality.
-
-The project is also part of my experience with building, packaging, and distributing Python desktop applications for Windows.</p>
+<p>
+  Melora is a lightweight desktop music player for Windows, built with Python.
+  It provides a simple and clean way to play and manage local music files.
+</p>
 
 
 <h2>Download</h2>
