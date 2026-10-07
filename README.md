@@ -21,7 +21,11 @@ The project is also part of my experience with building, packaging, and distribu
 
 <p>Get the latest Windows installer:
 
-[Download Melora-Setup.exe](https://github.com/mhmdheydarii/MELORA-MUSIC-PLAYER/releases/download/v1.0.0/Melora.exe)</p>
+<p>
+  <a href="https://github.com/mhmdheydarii/MELORA-MUSIC-PLAYER/releases/download/v1.0.0/Melora.exe">
+    Download Melora.exe
+  </a>
+</p>
 
 
 <h2>Features</h2>
